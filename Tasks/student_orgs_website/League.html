@@ -22,11 +22,11 @@
 
             <!-- Navigation Links -->
             <div style="display: flex; justify-content: center; gap: 35px;">
-                <a href="#" class="nav-link"
+                <a href="League.html" class="nav-link"
                     style="color: white; text-decoration: none; text-shadow: 0 0 5px #800000; padding: 8px 15px;">
-                    LEAGUE OF LEGENDS
+                    LEAGUE
                 </a>
-                <a href="#events" class="nav-link"
+                <a href="./Valorant.html" class="nav-link"
                     style="color: white; text-decoration: none; text-shadow: 0 0 5px #800000; padding: 8px 15px;">
                     VALORANT
                 </a>
@@ -39,11 +39,13 @@
     </nav>
 
     <!-- Landing Page -->
-    <<div id="home" style="height: 100vh; position: relative; overflow: hidden;">
+    <div id="home" style="height: 100vh; position: relative; overflow: hidden;">
         <!-- Image Background -->
-        <div style="position: absolute; width: 100%; height: 95%; display: flex; justify-content: center;">
-            <img src="./assets/mlbb/nemesis_rmbg.png" alt="Pylon Nemesis"
-                style="height: 100%; width: auto; object-fit: cover;">
+        <div style="position: absolute;width: 100%;height: 95%;display: flex;justify-content: center;background: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)),url('./assets/league/BGL.jpg');background-size: cover;background-position: center;">
+            <div style="position: absolute;width: 100%;height: 100%;backdrop-filter: blur(2px);">
+            <img src="./assets/league/Team.png" alt="Pylon Nemesis"
+                style="height: 100%; width: auto; position: fixed;margin-left: 140px;">
+            </div>
         </div>
 
         <!-- Gradient Overlay -->
@@ -55,116 +57,154 @@
         <div
             style="position: absolute; bottom: 20%; left: 50%; transform: translateX(-50%); text-align: center; width: 100%; z-index: 2;">
             <h2
-                style="color: #800000; font-size: 5em; text-shadow: 0 0 30px #800000; margin: 0 0 30px 0; letter-spacing: 4px;">
-                PYLON NEMESIS
+                style="color: #FFFFFF; font-size: 5em; margin: 0 0 30px 0; letter-spacing: 4px; text-shadow: -1px -1px 10px #fde800, 1px -1px 2px #5451f4, -1px 1px 2px #fde800, 1px 1px 2px #5451f4;">
+                PYLON YPSILOS
             </h2>
             <div style="display: flex; justify-content: center; gap: 40px; flex-wrap: wrap; padding: 0 20px;">
-                <span style="font-size: 2em; text-shadow: 0 0 10px #800000;">"Shadow" - Gold</span>
-                <span style="font-size: 2em; text-shadow: 0 0 10px #800000;">"Void" - EXP</span>
-                <span style="font-size: 2em; text-shadow: 0 0 10px #800000;">"Spectre" - Mid</span>
-                <span style="font-size: 2em; text-shadow: 0 0 10px #800000;">"Phantom" - Roam</span>
-                <span style="font-size: 2em; text-shadow: 0 0 10px #800000;">"Wraith" - Jungle</span>
+                <span style="font-size: 2em; text-shadow: 0 0 10px #fde800;">"Viels" - Top</span>
+                <span style="font-size: 2em; text-shadow: 0 0 10px #fde800;">"Corks" - Jungle</span>
+                <span style="font-size: 2em; text-shadow: 0 0 10px #fde800;">"Eksdi" - Mid</span>
+                <span style="font-size: 2em; text-shadow: 0 0 10px #fde800;">"Rubicker" - Bot</span>
+                <span style="font-size: 2em; text-shadow: 0 0 10px #fde800;">"Wpffh" - Support</span>
             </div>
         </div>
         </div>
 
+        <!-- Game Description Section -->
+        <div style="padding: 30px 20px; background-color: rgb(227, 155, 56); color: white; text-align: center;">
+            <h1 style="color: #FFFFFF; text-shadow: 0 0 20px rgb(244, 146, 9); margin-bottom: 20px;">About Pylon Ypsilos</h1>
+            
+            <div style="display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 30px;">
+                
+                <!-- Game Description -->
+                <p style="max-width: 600px; line-height: 1.6; font-size: 1.2em;">
+                    Pylon Ypsilos is a dominant force in the League of Legends esports scene, known for their precise macro play,  
+                    calculated team fights, and aggressive early-game strategies. Our roster consists of highly skilled players, each  
+                    mastering their role to outmaneuver opponents and secure victory on the Rift.  
+                    <br><br>  
+                    With a history of triumphs, including a 3-0 sweep in the Summoner’s Rift Showdown 2025, Pylon Guardians continues  
+                    to assert dominance in the competitive League scene. Every match is a testament to our synergy, mechanical skill,  
+                    and relentless pursuit of greatness.
+                    
+                </p>
+            </div>
+        </div>
+
         <!-- Content Section -->
-        <div
-            style="display: grid; grid-template-columns: 1fr 1fr; gap: 30px; padding: 50px 20px; min-height: 100vh; background-color: #0a0a0a; align-items: start;">
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 30px; padding: 50px 20px; min-height: 100vh; background-color: #0a0a0a; align-items: start;">
             <!-- Event Table -->
             <div style="padding: 20px;">
-                <h1 style="color: #800000; text-shadow: 0 0 10px #800000; margin-bottom: 15px;">Mobile Legends: Bang
-                    Bang</h1>
-                <table style="width: 100%; border-collapse: collapse; border: 2px solid #800000;">
-                    <tr style="background-color: #800000;">
+                <h1 style="color: rgb(227, 155, 56); text-shadow: 0 0 10px rgb(227, 155, 56); margin-bottom: 15px;">Upcoming Tournaments</h1>
+                <table style="width: 100%; border-collapse: collapse; border: 2px solid rgb(227, 155, 56);">
+                    <tr style="background-color: rgb(227, 155, 56);">
                         <th style="padding: 10px;">Date</th>
                         <th style="padding: 10px;">Event</th>
                         <th style="padding: 10px;">Prize Pool</th>
                     </tr>
-                    <tr style="border-bottom: 1px solid #800000;">
-                        <td style="padding: 10px;">10/15/2023</td>
-                        <td style="padding: 10px;">Valorant Championship</td>
-                        <td style="padding: 10px;">$50,000</td>
+                    <tr style="border-bottom: 1px solid rgb(227, 155, 56)">
+                        <td style="padding: 10px;">10/15/2025</td>
+                        <td style="padding: 10px;">Summoner’s Rift Clash 2025</td>
+                        <td style="padding: 10px;">50,000 pesos</td>
+                    </tr>
+                    <tr style="border-bottom: 1px solid rgb(227, 155, 56);">
+                        <td style="padding: 10px;">9/7/2025</td>
+                        <td style="padding: 10px;">CCIS Week: Rift Showdown</td>
+                        <td style="padding: 10px;">2,000 pesos</td>
+                    </tr>
+                    <tr style="border-bottom: 1px solid rgb(227, 155, 56);">
+                        <td style="padding: 10px;">8/24/2025</td>
+                        <td style="padding: 10px;">Inter-Branch PUP Rift Rumble</td>
+                        <td style="padding: 10px;">5,000 pesos</td>
+                    </tr>
+                    <tr style="border-bottom: 1px solid rgb(227, 155, 56);">
+                        <td style="padding: 10px;">6/13/2025</td>
+                        <td style="padding: 10px;">MAPUA ESPORTS: League of Champions</td>
+                        <td style="padding: 10px;">10,000 pesos</td>
+                    </tr>
+                    <tr style="border-bottom: 1px solid rgb(227, 155, 56);">
+                        <td style="padding: 10px;">4/15/2025</td>
+                        <td style="padding: 10px;">Intercollegiate Rift Wars</td>
+                        <td style="padding: 10px;">20,000 pesos</td>
                     </tr>
                 </table>
             </div>
 
-            <!-- Event List -->
-            <div style="display: flex; flex-direction: column; gap: 10px; padding: 20px 0;">
-                <h1 style="color: #800000; text-shadow: 0 0 10px #800000; margin-bottom: 15px;">Past events</h1>
-                <!-- Championship Card -->
-                <div style="background-color: #1a1a1a; padding: 15px; border: 2px solid #800000;">
-                    <div style="display: flex; align-items: center; gap: 20px;">
-                        <!-- Circle Image -->
-                        <div style="width: 100px; height: 100px; border-radius: 50%; overflow: hidden;">
-                            <img src="./assets/mlbb/nationals.jpg" alt="Nationals"
-                                style="width: 100%; height: 100%; object-fit: cover;">
-                        </div>
-                        <!-- Text Content -->
-                        <div>
-                            <h2
-                                style="color: #800000; text-shadow: 0 0 10px #800000; margin: 0 0 10px 0; font-size: 2em;">
-                                THE NATIONALS 2025
-                            </h2>
-                            <p style="color: #aaa; margin: 0; line-height: 1.4; font-size: 0.9em;">
-                                Pylon Nemesis dominates the MLBB Nationals tournament with a spectacular 4-0 sweep in
-                                the grand finals.
-                            </p>
-                        </div>
-                    </div>
+               <!-- Event List -->
+    <div style="display: flex; flex-direction: column; gap: 10px; padding: 20px 0;">
+        <h1 style="color: rgb(227, 155, 56); text-shadow: 0 0 10px rgb(227, 155, 56); margin-bottom: 15px;">Past Events</h1>
+
+        <!-- Championship Card -->
+        <div style="background-color: #1a1a1a; padding: 15px; border: 2px solid rgb(227, 155, 56);">
+            <div style="display: flex; align-items: flex-start; gap: 20px;">
+                <!-- Circle Image -->
+                <div style="flex-shrink: 0; width: 100px; height: 100px; border-radius: 50%; overflow: hidden;">
+                    <img src="./assets/league/elder.png" alt="Rift War 2025"
+                        style="width: 100%; height: 100%; object-fit: cover;">
                 </div>
-                <div style="background-color: #1a1a1a; padding: 15px; border: 2px solid #800000;">
-                    <div style="display: flex; align-items: flex-start; gap: 20px;">
-                        <!-- Circle Image -->
-                        <div style="flex-shrink: 0; width: 100px; height: 100px; border-radius: 50%; overflow: hidden;">
-                            <img src="./assets/mlbb/nationals.jpg" alt="Nationals"
-                                style="width: 100%; height: 100%; object-fit: cover;">
-                        </div>
-                        <!-- Title and Text Content -->
-                        <div style="flex-grow: 1; min-width: 0;">
-                            <h2 style="color: #800000; text-shadow: 0 0 10px #800000; margin: 0; font-size: 2em;">
-                                THE NATIONALS 2025
-                            </h2>
-                            <p
-                                style="color: #aaa; margin: 10px 0 0; line-height: 1.4; font-size: 0.9em; word-break: break-word;">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis saepe nemo velit
-                                suscipit cupiditate
-                                consequuntur labore quidem a, eveniet temporibus non quaerat error officia dolorem
-                                ducimus vitae
-                                doloremque ut. Adipisci? Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                Accusantium perferendis aut dolorum optio ratione dolor ducimus, aliquam ut, consectetur
-                                incidunt doloribus. Quia at non voluptatum quos dolorum incidunt culpa officia?
-                            </p>
-                        </div>
-                    </div>
+                <!-- Title and Text Content -->
+                <div style="flex-grow: 1; min-width: 0;">
+                    <h2 style="color: rgb(227, 155, 56); text-shadow: 0 0 10px rgb(227, 155, 56); margin: 0; font-size: 2em;">
+                        Rift War 2025
+                    </h2>
+                    <p style="color: #aaa; margin: 10px 0 0; line-height: 1.4; font-size: 0.9em; word-break: break-word;">
+                        Pylon Main showcased their dominance at Rift War 2025, claiming the championship title with a 3-1 victory over Shadow Reapers.  
+                        The team’s macro gameplay and objective control were unparalleled, with Phantom leading the charge in mid lane and Wraith securing every crucial Baron.  
+                        The highlight of the tournament came in the final game when Spectre’s game-winning Pentakill on Jinx sealed the championship.  
+                        With this triumph, Pylon Main establishes itself as one of the top League of Legends teams in 2025.
+                    </p>
                 </div>
-
-
-                <div style="background-color: #1a1a1a; padding: 15px; border: 2px solid #800000;">
-                    <div style="display: flex; align-items: center; gap: 20px;">
-                        <!-- Circle Image -->
-                        <div style="width: 100px; height: 100px; border-radius: 50%; overflow: hidden;">
-                            <img src="./assets/mlbb/nationals.jpg" alt="Nationals"
-                                style="width: 100%; height: 100%; object-fit: cover;">
-                        </div>
-                        <!-- Text Content -->
-                        <div>
-                            <h2
-                                style="color: #800000; text-shadow: 0 0 10px #800000; margin: 0 0 10px 0; font-size: 2em;">
-                                THE NATIONALS 2025
-                            </h2>
-                            <p style="color: #aaa; margin: 0; line-height: 1.4; font-size: 0.9em;">
-                                Pylon Nemesis dominates the MLBB Nationals tournament with a spectacular 4-0 sweep in
-                                the grand finals.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-
             </div>
         </div>
+        <div style="background-color: #1a1a1a; padding: 15px; border: 2px solid rgb(227, 155, 56);">
+            <div style="display: flex; align-items: flex-start; gap: 20px;">
+                <!-- Circle Image -->
+                <div style="flex-shrink: 0; width: 100px; height: 100px; border-radius: 50%; overflow: hidden;">
+                    <img src="./assets/league/BG.png" alt="Summoner’s Rift Showdown"
+                        style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
+                <!-- Title and Text Content -->
+                <div style="flex-grow: 1; min-width: 0;">
+                    <h2 style="color: rgb(227, 155, 56); text-shadow: 0 0 10px rgb(227, 155, 56); margin: 0; font-size: 2em;">
+                        Summoner’s Rift Showdown 2025
+                    </h2>
+                    <p style="color: #aaa; margin: 10px 0 0; line-height: 1.4; font-size: 0.9em; word-break: break-word;">
+                        The Summoner’s Rift Showdown 2025 delivered an unforgettable grand final, with <strong>Pylon Guardians</strong> securing the championship title after a thrilling 3-2 series against <strong>Void Slayers</strong>. 
+        
+                        With the tournament’s meta favoring high-tempo aggression, Pylon Guardians capitalized on their explosive early-game strategy. <strong>Storm</strong>, the team’s Mid Laner, dominated the series with an unmatched Azir performance, weaving through fights and securing key Emperor’s Divides that turned the tide in their favor. Meanwhile, <strong>Revenant</strong> controlled the jungle with his Sejuani, consistently setting up plays that led to crucial Baron takes.
+        
+                        Game 5 was the most intense, as <strong>Phantom’s</strong> Jinx popped off in the final team fight, cleaning up a Quadra Kill and leading the charge to victory. This hard-fought battle cemented Pylon Guardians as one of the strongest teams in the 2025 League of Legends circuit, proving their resilience and adaptability on the grand stage.
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+        
 
+        <div style="background-color: #1a1a1a; padding: 15px; border: 2px solid rgb(227, 155, 56);">
+            <div style="display: flex; align-items: flex-start; gap: 20px;">
+                <!-- Circle Image -->
+                <div style="flex-shrink: 0; width: 100px; height: 100px; border-radius: 50%; overflow: hidden;">
+                    <img src="./assets/league/Baron.jpg" alt="Baron Brawl 2025"
+                        style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
+                <!-- Title and Text Content -->
+                <div style="flex-grow: 1; min-width: 0;">
+                    <h2 style="color: rgb(227, 155, 56); text-shadow: 0 0 10px rgb(227, 155, 56); margin: 0; font-size: 2em;">
+                        Baron Brawl 2025
+                    </h2>
+                    <p style="color: #aaa; margin: 10px 0 0; line-height: 1.4; font-size: 0.9em; word-break: break-word;">
+                        Pylon Main dominated Baron Brawl 2025, executing flawless rotations and split-pushing strategies to claim a 3-0 sweep in the Grand Finals.  
+                        Wraith’s jungle control ensured every Baron Nashor went to their team, while Void’s aggressive top lane pressure kept opponents scrambling.  
+                        The series concluded with Shadow’s insane outplay on Zed, eliminating three enemy carries in a single skirmish.  
+                        With this victory, Pylon Main cements itself as an unstoppable force in the competitive League of Legends scene.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        </div>
+        
         <!-- Footer -->
         <footer style="background-color: #000; padding: 40px 30px; text-align: center; border-top: 2px solid #800000;">
 

@@ -22,11 +22,11 @@
 
             <!-- Navigation Links -->
             <div style="display: flex; justify-content: center; gap: 35px;">
-                <a href="#home" class="nav-link"
+                <a href="League.html" class="nav-link"
                     style="color: white; text-decoration: none; text-shadow: 0 0 5px #800000; padding: 8px 15px;">
                     LEAGUE OF LEGENDS
                 </a>
-                <a href="#events" class="nav-link"
+                <a href="Valorant.html" class="nav-link"
                     style="color: white; text-decoration: none; text-shadow: 0 0 5px #800000; padding: 8px 15px;">
                     VALORANT
                 </a>
@@ -39,11 +39,13 @@
     </nav>
 
     <!-- Landing Page -->
-    <<div id="home" style="height: 100vh; position: relative; overflow: hidden;">
+    <div id="home" style="height: 100vh; position: relative; overflow: hidden;">
         <!-- Image Background -->
-        <div style="position: absolute; width: 100%; height: 95%; display: flex; justify-content: center;">
-            <img src="./assets/valorant/mainteam.png" alt="Pylon Main"
-                style="height: 100%; width: auto; object-fit: cover;">
+        <div style="position: absolute; width: 100%; height: 95%; display: flex; justify-content: center;background: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)),url('./assets/valorant/BG.png');background-size: cover;background-position: center;">
+            
+            <img src="./assets/valorant/Team.png" alt="Pylon Nemesis"
+                style="height: 100%; width: auto;margin-left: 10px; margin-top: 100px;">
+                
         </div>
 
         <!-- Gradient Overlay -->
@@ -55,17 +57,32 @@
         <div
             style="position: absolute; bottom: 20%; left: 50%; transform: translateX(-50%); text-align: center; width: 100%; z-index: 2;">
             <h2
-                style="color: #fffafa; font-size: 5em; text-shadow: 0 0 30px #800000; margin: 0 0 30px 0; letter-spacing: 4px;">
+                style="color: #FFFFFF; font-size: 5em; text-shadow: 0 0 30px #4f1cf4; margin: 0 0 30px 0; letter-spacing: 4px;">
                 PYLON MAIN TEAM
             </h2>
             <div style="display: flex; justify-content: center; gap: 40px; flex-wrap: wrap; padding: 0 20px;">
-                <span style="font-size: 1.5em; text-shadow: 0 0 10px #c82929;">"Passy" - Controller</span>
-                <span style="font-size: 1.5em; text-shadow: 0 0 10px #800000;">"Kronoshi" - Duelist</span>
-                <span style="font-size: 1.5em; text-shadow: 0 0 10px #800000;">"AZIFps" - IGL</span>
-                <span style="font-size: 1.5em; text-shadow: 0 0 10px #800000;">"Crix" - Initiator</span>
-                <span style="font-size: 1.5em; text-shadow: 0 0 10px #800000;">"Chevy" - Sentinel</span>
+                <span style="font-size: 1.5em; text-shadow: 0 0 10px #4f1cf4">"Passy" - Controller</span>
+                <span style="font-size: 1.5em; text-shadow: 0 0 10px #4f1cf4;">"Kronoshi" - Duelist</span>
+                <span style="font-size: 1.5em; text-shadow: 0 0 10px #4f1cf4;">"AZIFps" - IGL</span>
+                <span style="font-size: 1.5em; text-shadow: 0 0 10px #4f1cf4;">"Crix" - Initiator</span>
+                <span style="font-size: 1.5em; text-shadow: 0 0 10px #4f1cf4;">"Chevy" - Sentinel</span>
             </div>
         </div>
+        </div>
+
+         <!-- Game Description Section -->
+         <div style="padding: 30px 20px; background-color: #4f1cf4; color: white; text-align: center;">
+            <h1 style="color: #FFFFFF; text-shadow: 0 0 10px #6b62f3; margin-bottom: 20px;">About Pylon Main</h1>
+            
+            <div style="display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 30px;">
+                
+                <!-- Game Description -->
+                <p style="max-width: 600px; line-height: 1.6; font-size: 1.2em;">
+                    Pylon Main is a formidable contender in the Valorant esports scene, renowned for their tactical executions, precise gunplay, and game-changing clutches. Our roster is composed of elite players, each excelling in their roles to outmaneuver opponents and secure victory.
+                    <br><br>
+                    With a legacy of triumphs, including a commanding 3-1 victory at E-Sports Mania 2025, Pylon Main continues to dominate the competitive Valorant stage. Every match is a testament to our strategic depth, flawless teamwork, and unwavering determination to stay at the top.
+                </p>
+            </div>
         </div>
 
         <!-- Content Section -->
@@ -73,98 +90,102 @@
             style="display: grid; grid-template-columns: 1fr 1fr; gap: 30px; padding: 50px 20px; min-height: 100vh; background-color: #0a0a0a; align-items: start;">
             <!-- Event Table -->
             <div style="padding: 20px;">
-                <h1 style="color: #800000; text-shadow: 0 0 10px #800000; margin-bottom: 15px;">Valorant</h1>
-                <table style="width: 100%; border-collapse: collapse; border: 2px solid #800000;">
-                    <tr style="background-color: #800000;">
+                <h1 style="color: #4f1cf4; text-shadow: 0 0 10px #4f1cf4; margin-bottom: 15px;">Upcoming Tournaments</h1>
+                <table style="width: 100%; border-collapse: collapse; border: 2px solid #4f1cf4;">
+                    <tr style="background-color: #4f1cf4;">
                         <th style="padding: 10px;">Date</th>
                         <th style="padding: 10px;">Event</th>
                         <th style="padding: 10px;">Prize Pool</th>
                     </tr>
-                    <tr style="border-bottom: 1px solid #800000;">
-                        <td style="padding: 10px;">10/15/2023</td>
-                        <td style="padding: 10px;">Valorant Championship</td>
-                        <td style="padding: 10px;">$50,000</td>
+                    <tr style="border-bottom: 1px solid #4f1cf4;">
+                        <td style="padding: 10px;">12/10/2025</td>
+                        <td style="padding: 10px;">E-Sports Mania 2025</td>
+                        <td style="padding: 10px;">100,000 pesos</td>
+                    </tr>
+                    <tr style="border-bottom: 1px solid #4f1cf4;">
+                        <td style="padding: 10px;">11/05/2025</td>
+                        <td style="padding: 10px;">MNL Esports 2025</td>
+                        <td style="padding: 10px;">75,000 pesos</td>
+                    </tr>
+                    <tr style="border-bottom: 1px solid #4f1cf4;">
+                        <td style="padding: 10px;">09/20/2025</td>
+                        <td style="padding: 10px;">Vanguard Arena: Valorant Showdown</td>
+                        <td style="padding: 10px;">50,000 pesos</td>
+                    </tr>
+                    <tr style="border-bottom: 1px solid #4f1cf4;">
+                        <td style="padding: 10px;">07/30/2025</td>
+                        <td style="padding: 10px;">The Sentinel Cup</td>
+                        <td style="padding: 10px;">30,000 pesos</td>
+                    </tr>
+                    <tr style="border-bottom: 1px solid #4f1cf4;">
+                        <td style="padding: 10px;">05/18/2025</td>
+                        <td style="padding: 10px;">ESGS 2025: Valorant Open</td>
+                        <td style="padding: 10px;">20,000 pesos</td>
                     </tr>
                 </table>
+                
             </div>
 
             <!-- Event List -->
             <div style="display: flex; flex-direction: column; gap: 10px; padding: 20px 0;">
-                <h1 style="color: #800000; text-shadow: 0 0 10px #800000; margin-bottom: 15px;">Past events</h1>
-                <!-- Championship Card -->
-                <div style="background-color: #1a1a1a; padding: 15px; border: 2px solid #800000;">
-                    <div style="display: flex; align-items: center; gap: 20px;">
-                        <!-- Circle Image -->
+                <h1 style="color: #4f1cf4; text-shadow: 0 0 10px #4f1cf4; margin-bottom: 15px;">Past events</h1>
+            
+                <!-- E-SPORTS MANIA 2025 -->
+                <div style="background-color: #1a1a1a; padding: 15px; border: 2px solid #4f1cf4;">
+                    <div style="display: flex; align-items: flex-start; gap: 20px;">
                         <div style="flex-shrink: 0; width: 100px; height: 100px; border-radius: 50%; overflow: hidden;">
-                            <img src="./assets/valorant/vct.jfif" alt="reyna"
+                            <img src="./assets/valorant/vct.jfif" alt="E-Sports Mania 2025"
                                 style="width: 100%; height: 100%; object-fit: cover;">
                         </div>
-                        <!-- Text Content -->
-                        <div>
-                            <h2
-                                style="color: #800000; text-shadow: 0 0 10px #800000; margin: 0 0 10px 0; font-size: 2em;">
+                        <div style="flex-grow: 1; min-width: 0;">
+                            <h2 style="color: #4f1cf4; text-shadow: 0 0 10px #4f1cf4; margin: 0; font-size: 2em;">
                                 E-SPORTS MANIA 2025
                             </h2>
-                            <p style="color: #aaa; margin: 0; line-height: 1.4; font-size: 0.9em;">
-                                Pylon Esports has made it to the semi-finals of EsportsMania with an incredible
-                                performance in Valorant! Their teamwork and skill have brought them this far,
-                                and they are ready to keep pushing for victory.
+                            <p style="color: #aaa; margin: 10px 0 0; line-height: 1.4; font-size: 0.9em; word-break: break-word;">
+                                Pylon Nemesis delivered an unforgettable performance at E-Sports Mania 2025, securing the championship title with a 3-1 victory over Phantom Reapers. Shadow’s precise Operator shots controlled the tempo, while Spectre’s aggressive duels gave the team an early lead. The most thrilling moment came in the final map on Split, where Wraith clutched a 1v3 post-plant situation, securing the final round and the championship. With this win, Pylon Nemesis continues to establish itself as a dominant force in Valorant esports.
                             </p>
                         </div>
                     </div>
                 </div>
-                <div style="background-color: #1a1a1a; padding: 15px; border: 2px solid #800000;">
+            
+                <!-- MNL ESPORTS 2025 -->
+                <div style="background-color: #1a1a1a; padding: 15px; border: 2px solid #4f1cf4;">
                     <div style="display: flex; align-items: flex-start; gap: 20px;">
-                        <!-- Circle Image -->
                         <div style="flex-shrink: 0; width: 100px; height: 100px; border-radius: 50%; overflow: hidden;">
-                            <img src="./assets/valorant/jett.png" alt="Jett"
+                            <img src="./assets/valorant/jett.png" alt="MNL Esports 2025"
                                 style="width: 100%; height: 100%; object-fit: cover;">
                         </div>
-                        <!-- Title and Text Content -->
                         <div style="flex-grow: 1; min-width: 0;">
-                            <h2 style="color: #800000; text-shadow: 0 0 10px #800000; margin: 0; font-size: 2em;">
+                            <h2 style="color: #4f1cf4; text-shadow: 0 0 10px #4f1cf4; margin: 0; font-size: 2em;">
                                 MNL ESPORTS 2025
                             </h2>
-                            <p
-                                style="color: #aaa; margin: 10px 0 0; line-height: 1.4; font-size: 0.9em; word-break: break-word;">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis saepe nemo velit
-                                suscipit cupiditate
-                                consequuntur labore quidem a, eveniet temporibus non quaerat error officia dolorem
-                                ducimus vitae
-                                doloremque ut. Adipisci? Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                Accusantium perferendis aut dolorum optio ratione dolor ducimus, aliquam ut, consectetur
-                                incidunt doloribus. Quia at non voluptatum quos dolorum incidunt culpa officia?
+                            <p style="color: #aaa; margin: 10px 0 0; line-height: 1.4; font-size: 0.9em; word-break: break-word;">
+                                Pylon Nemesis dominated the MNL Esports 2025 tournament, taking down Titan Slayers in a clean 3-0 sweep. The team’s synergy was on full display, with Phantom leading well-coordinated site executes and Void’s defensive plays holding back every enemy push. On Ascent, Spectre landed a game-changing ace, securing an eco round that turned the momentum in Pylon Nemesis' favor. With flawless teamwork and disciplined play, the team claimed another prestigious championship title.
                             </p>
                         </div>
                     </div>
                 </div>
-
-
-                <div style="background-color: #1a1a1a; padding: 15px; border: 2px solid #800000;">
-                    <div style="display: flex; align-items: center; gap: 20px;">
-                        <!-- Circle Image -->
+            
+                <!-- ESGS 2022 -->
+                <div style="background-color: #1a1a1a; padding: 15px; border: 2px solid #4f1cf4;">
+                    <div style="display: flex; align-items: flex-start; gap: 20px;">
                         <div style="flex-shrink: 0; width: 100px; height: 100px; border-radius: 50%; overflow: hidden;">
-                            <img src="./assets/valorant/reyna.png" alt="reyna"
+                            <img src="./assets/valorant/reyna.png" alt="ESGS 2022"
                                 style="width: 100%; height: 100%; object-fit: cover;">
                         </div>
-                        <!-- Text Content -->
-                        <div>
-                            <h2
-                                style="color: #800000; text-shadow: 0 0 10px #800000; margin: 0 0 10px 0; font-size: 2em;">
+                        <div style="flex-grow: 1; min-width: 0;">
+                            <h2 style="color:#4f1cf4; text-shadow: 0 0 10px #4f1cf4 ;margin: 0; font-size: 2em;">
                                 ESGS 2022
                             </h2>
-                            <p style="color: #aaa; margin: 0; line-height: 1.4; font-size: 0.9em;">
-                                Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae,
-                                eleifend ac, enim.
-                                Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla
-                                ut metus varius laoreet
+                            <p style="color: #aaa; margin: 10px 0 0; line-height: 1.4; font-size: 0.9em; word-break: break-word;">
+                                Pylon Nemesis made a name for itself at ESGS 2022, winning its first major Valorant championship. The team fought through a stacked bracket and faced Apex Predators in a nail-biting Grand Finals. In the final map on Haven, Wraith secured a crucial clutch with a perfectly timed Viper’s Pit, shutting down the enemy’s final push. The tournament marked the beginning of Pylon Nemesis' journey to becoming a powerhouse in the Valorant esports scene.
                             </p>
                         </div>
                     </div>
                 </div>
-
-
+            
             </div>
+            
         </div>
 
         <!-- Footer -->
