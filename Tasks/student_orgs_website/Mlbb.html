@@ -22,9 +22,9 @@
 
             <!-- Navigation Links -->
             <div style="display: flex; justify-content: center; gap: 35px;">
-                <a href="#home" class="nav-link"
+                <a href="League.html" class="nav-link"
                     style="color: white; text-decoration: none; text-shadow: 0 0 5px #800000; padding: 8px 15px;">
-                    LEAGUE OF LEGENDS
+                    LEAGUE
                 </a>
                 <a href="#events" class="nav-link"
                     style="color: white; text-decoration: none; text-shadow: 0 0 5px #800000; padding: 8px 15px;">
@@ -39,11 +39,13 @@
     </nav>
 
     <!-- Landing Page -->
-    <<div id="home" style="height: 100vh; position: relative; overflow: hidden;">
+    <div id="home" style="height: 100vh; position: relative; overflow: hidden;">
         <!-- Image Background -->
-        <div style="position: absolute; width: 100%; height: 95%; display: flex; justify-content: center;">
+        <div style="position: absolute;width: 100%;height: 95%;display: flex;justify-content: center;background: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)),url('./assets/mlbb/ML_BG.jpg');background-size: cover;background-position: center;">
+            <div style="position: absolute;width: 100%;height: 100%;backdrop-filter: blur(4px);">
             <img src="./assets/mlbb/nemesis_rmbg.png" alt="Pylon Nemesis"
-                style="height: 100%; width: auto; object-fit: cover;">
+                style="height: 100%; width: auto; position: fixed;margin-left: 50px;">
+            </div>
         </div>
 
         <!-- Gradient Overlay -->
@@ -55,7 +57,7 @@
         <div
             style="position: absolute; bottom: 20%; left: 50%; transform: translateX(-50%); text-align: center; width: 100%; z-index: 2;">
             <h2
-                style="color: #800000; font-size: 5em; text-shadow: 0 0 30px #800000; margin: 0 0 30px 0; letter-spacing: 4px;">
+                style="color: #800000; font-size: 5em; text-shadow: 0 0 30px #800000; margin: 0 0 30px 0; letter-spacing: 4px; text-shadow: -1px -1px 10px #510, 1px -1px 0 #510, -1px 1px 0 #510, 1px 1px 0 #510;">
                 PYLON NEMESIS
             </h2>
             <div style="display: flex; justify-content: center; gap: 40px; flex-wrap: wrap; padding: 0 20px;">
@@ -68,13 +70,31 @@
         </div>
         </div>
 
+        <!-- Game Description Section -->
+        <div style="padding: 30px 20px; background-color: #510; color: white; text-align: center;">
+            <h1 style="color: #FFFFFF; text-shadow: 0 0 10px #800000; margin-bottom: 20px;">About Pylon Nemesis</h1>
+            
+            <div style="display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 30px;">
+                
+                <!-- Game Description -->
+                <p style="max-width: 600px; line-height: 1.6; font-size: 1.2em;">
+                    Pylon Nemesis is a dominant force in the MLBB esports scene, known for their strategic plays, 
+                    aggressive rotations, and clutch team fights. Our roster consists of highly skilled players, each 
+                    mastering a specific role to secure victory in every battle.  
+                    <br><br>
+                    With a history of triumphs, including a 4-0 sweep in The Nationals 2025, Pylon Nemesis continues 
+                    to dominate the competitive MLBB scene. Every match is a showcase of skill, teamwork, and the 
+                    relentless pursuit of greatness. 
+                </p>
+            </div>
+        </div>
+
         <!-- Content Section -->
         <div
             style="display: grid; grid-template-columns: 1fr 1fr; gap: 30px; padding: 50px 20px; min-height: 100vh; background-color: #0a0a0a; align-items: start;">
             <!-- Event Table -->
             <div style="padding: 20px;">
-                <h1 style="color: #800000; text-shadow: 0 0 10px #800000; margin-bottom: 15px;">Mobile Legends: Bang
-                    Bang</h1>
+                <h1 style="color: #800000; text-shadow: 0 0 10px #800000; margin-bottom: 15px;">Upcoming Tournaments</h1>
                 <table style="width: 100%; border-collapse: collapse; border: 2px solid #800000;">
                     <tr style="background-color: #800000;">
                         <th style="padding: 10px;">Date</th>
@@ -82,37 +102,38 @@
                         <th style="padding: 10px;">Prize Pool</th>
                     </tr>
                     <tr style="border-bottom: 1px solid #800000;">
-                        <td style="padding: 10px;">10/15/2023</td>
-                        <td style="padding: 10px;">Valorant Championship</td>
-                        <td style="padding: 10px;">$50,000</td>
+                        <td style="padding: 10px;">10/15/2025</td>
+                        <td style="padding: 10px;">MLBB Championship 2023: Lakas ng Pinas</td>
+                        <td style="padding: 10px;">50,000 pesos</td>
+                    </tr>
+                    <tr style="border-bottom: 1px solid #800000;">
+                        <td style="padding: 10px;">9/7/2025</td>
+                        <td style="padding: 10px;">CCIS Week: Esport Fest</td>
+                        <td style="padding: 10px;">2,000 pesos</td>
+                    </tr>
+                    <tr style="border-bottom: 1px solid #800000;">
+                        <td style="padding: 10px;">8/24/2025</td>
+                        <td style="padding: 10px;">Inter-Branch PUP Esports Clash</td>
+                        <td style="padding: 10px;">5,000 pesos</td>
+                    </tr>
+                    <tr style="border-bottom: 1px solid #800000;">
+                        <td style="padding: 10px;">6/13/2025</td>
+                        <td style="padding: 10px;">MAPUA ESPORTS: Youth are the Hereos!</td>
+                        <td style="padding: 10px;">10,000 pesos</td>
+                    </tr>
+                    <tr style="border-bottom: 1px solid #800000;">
+                        <td style="padding: 10px;">4/15/2025</td>
+                        <td style="padding: 10px;">MLBB Interschool Championship</td>
+                        <td style="padding: 10px;">20,000 pesos</td>
                     </tr>
                 </table>
             </div>
+            
 
             <!-- Event List -->
             <div style="display: flex; flex-direction: column; gap: 10px; padding: 20px 0;">
                 <h1 style="color: #800000; text-shadow: 0 0 10px #800000; margin-bottom: 15px;">Past events</h1>
                 <!-- Championship Card -->
-                <div style="background-color: #1a1a1a; padding: 15px; border: 2px solid #800000;">
-                    <div style="display: flex; align-items: center; gap: 20px;">
-                        <!-- Circle Image -->
-                        <div style="width: 100px; height: 100px; border-radius: 50%; overflow: hidden;">
-                            <img src="./assets/mlbb/nationals.jpg" alt="Nationals"
-                                style="width: 100%; height: 100%; object-fit: cover;">
-                        </div>
-                        <!-- Text Content -->
-                        <div>
-                            <h2
-                                style="color: #800000; text-shadow: 0 0 10px #800000; margin: 0 0 10px 0; font-size: 2em;">
-                                THE NATIONALS 2025
-                            </h2>
-                            <p style="color: #aaa; margin: 0; line-height: 1.4; font-size: 0.9em;">
-                                Pylon Nemesis dominates the MLBB Nationals tournament with a spectacular 4-0 sweep in
-                                the grand finals.
-                            </p>
-                        </div>
-                    </div>
-                </div>
                 <div style="background-color: #1a1a1a; padding: 15px; border: 2px solid #800000;">
                     <div style="display: flex; align-items: flex-start; gap: 20px;">
                         <!-- Circle Image -->
@@ -123,48 +144,69 @@
                         <!-- Title and Text Content -->
                         <div style="flex-grow: 1; min-width: 0;">
                             <h2 style="color: #800000; text-shadow: 0 0 10px #800000; margin: 0; font-size: 2em;">
-                                THE NATIONALS 2025
+                                MLBB Nationals 2025
                             </h2>
                             <p
                                 style="color: #aaa; margin: 10px 0 0; line-height: 1.4; font-size: 0.9em; word-break: break-word;">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis saepe nemo velit
-                                suscipit cupiditate
-                                consequuntur labore quidem a, eveniet temporibus non quaerat error officia dolorem
-                                ducimus vitae
-                                doloremque ut. Adipisci? Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                Accusantium perferendis aut dolorum optio ratione dolor ducimus, aliquam ut, consectetur
-                                incidunt doloribus. Quia at non voluptatum quos dolorum incidunt culpa officia?
+                                In an electrifying display of skill and strategy, Pylon Nemesis emerged as the undisputed champions of the MLBB Grand Invitational 2025, securing victory with a dominant 4-1 performance in the Grand Finals against Omega Titans.
+
+From the very first match, Pylon Nemesis showcased their signature aggressive rotations and flawless team coordination. Shadow, our Gold Laner, delivered a MVP-worthy performance, securing multiple Savage kills with pinpoint accuracy. Meanwhile, Wraith’s jungle control kept the enemy team on the back foot, securing crucial Lord takes that turned the tide of battle.
+
+The highlight of the tournament came in Game 4, where Spectre’s clutch Kagura play wiped out the entire enemy squad in a game-winning team fight, leading to an 11-minute finish—one of the fastest Grand Final victories in MLBB Grand Invitational history.
+
+With this victory, Pylon Nemesis cements its place as one of the top MLBB teams of 2025, proving once again that strategy, teamwork, and raw talent are the keys to esports greatness. The road to more championships has just begun!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div style="background-color: #1a1a1a; padding: 15px; border: 2px solid #800000;">
+                    <div style="display: flex; align-items: flex-start; gap: 20px;">
+                        <!-- Circle Image -->
+                        <div style="flex-shrink: 0; width: 100px; height: 100px; border-radius: 50%; overflow: hidden;">
+                            <img src="./assets/mlbb/Aether.jpg" alt="Nationals"
+                                style="width: 100%; height: 100%; object-fit: cover;">
+                        </div>
+                        <!-- Title and Text Content -->
+                        <div style="flex-grow: 1; min-width: 0;">
+                            <h2 style="color: #800000; text-shadow: 0 0 10px #800000; margin: 0; font-size: 2em;">
+                                the Aether Cup 2025
+                            </h2>
+                            <p
+                                style="color: #aaa; margin: 10px 0 0; line-height: 1.4; font-size: 0.9em; word-break: break-word;">
+                                Pylon Nemesis showcased their dominance in the Aether Cup 2025, conquering the competition with a flawless 4-0 sweep in the Grand Finals against the Eclipse Reapers. With Shadow leading the charge in the Gold Lane and Wraith’s impeccable jungle control, the team executed perfect rotations and objective control, leaving no room for their opponents to recover. A game-winning Lord steal by Phantom in the final match sealed the victory, cementing Pylon Nemesis as the undisputed champions of the tournament. With this triumph, the team further solidifies its reputation as a powerhouse in the MLBB esports scene.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div style="background-color: #1a1a1a; padding: 15px; border: 2px solid #800000;">
+                    <div style="display: flex; align-items: flex-start; gap: 20px;">
+                        <!-- Circle Image -->
+                        <div style="flex-shrink: 0; width: 100px; height: 100px; border-radius: 50%; overflow: hidden;">
+                            <img src="./assets/mlbb/Celestial.jpg" alt="Nationals"
+                                style="width: 100%; height: 100%; object-fit: cover;">
+                        </div>
+                        <!-- Title and Text Content -->
+                        <div style="flex-grow: 1; min-width: 0;">
+                            <h2 style="color: #800000; text-shadow: 0 0 10px #800000; margin: 0; font-size: 2em;">
+                                the Celestial Clash 2025
+                            </h2>
+                            <p
+                                style="color: #aaa; margin: 10px 0 0; line-height: 1.4; font-size: 0.9em; word-break: break-word;">
+                                Pylon Nemesis proved their dominance once again by claiming the Celestial Clash 2025 championship with a commanding 4-1 victory over the formidable Titan Slayers. Showcasing flawless synergy and aggressive map control, the team outmaneuvered their opponents in every match. Void’s EXP lane pressure and Spectre’s precision mid-lane plays kept the enemy on edge, while Wraith’s clutch Retribution steals secured key Lords that turned the tide of battle. In the final game, Shadow delivered a Savage kill, sealing the win and adding another trophy to Pylon Nemesis’ growing legacy. With this victory, the team solidifies its status as a top contender in the MLBB pro scene.
                             </p>
                         </div>
                     </div>
                 </div>
 
 
-                <div style="background-color: #1a1a1a; padding: 15px; border: 2px solid #800000;">
-                    <div style="display: flex; align-items: center; gap: 20px;">
-                        <!-- Circle Image -->
-                        <div style="width: 100px; height: 100px; border-radius: 50%; overflow: hidden;">
-                            <img src="./assets/mlbb/nationals.jpg" alt="Nationals"
-                                style="width: 100%; height: 100%; object-fit: cover;">
-                        </div>
-                        <!-- Text Content -->
-                        <div>
-                            <h2
-                                style="color: #800000; text-shadow: 0 0 10px #800000; margin: 0 0 10px 0; font-size: 2em;">
-                                THE NATIONALS 2025
-                            </h2>
-                            <p style="color: #aaa; margin: 0; line-height: 1.4; font-size: 0.9em;">
-                                Pylon Nemesis dominates the MLBB Nationals tournament with a spectacular 4-0 sweep in
-                                the grand finals.
-                            </p>
-                        </div>
-                    </div>
+                
                 </div>
 
 
             </div>
         </div>
-
+        
         <!-- Footer -->
         <footer style="background-color: #000; padding: 40px 30px; text-align: center; border-top: 2px solid #800000;">
 
