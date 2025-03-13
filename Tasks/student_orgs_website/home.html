@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pylon Esports</title>
+  <link rel="shortcut icon" href="./assets/pylon_esports_logo.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <style>
+    /* General Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #000; /* Black background */
+      color: #fff; /* White text */
+    }
+
+    /* Header Styling */
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+      background-color: black; /* Dark background */
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .logo-container {
+      display: flex;
+      align-items: center;
+    }
+
+    .logo {
+      width: 50px; /* Adjust as needed */
+      height: auto;
+      margin-right: 10px;
+    }
+
+    .logo-text {
+      font-size: 24px;
+      font-weight: bold;
+      color: #ff0000; /* Red text */
+    }
+
+    .navbar {
+      list-style: none;
+      display: flex;
+      gap: 20px; /* Space between nav items */
+    }
+
+    .navbar li a {
+      text-decoration: none;
+      color: #fff; /* White text */
+      font-weight: bold;
+      font-size: 16px;
+      transition: color 0.3s ease;
+    }
+
+    .navbar li a:hover {
+      color: #ff0000; /* Red text on hover */
+    }
+
+    .header-actions {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .cta-button {
+      padding: 10px 20px;
+      background-color: #ff0000; /* Red button */
+      color: #fff;
+      text-decoration: none;
+      font-size: 16px;
+      font-weight: bold;
+      transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+
+    .cta-button:hover {
+      background-color: #cc0000; /* Darker red on hover */
+      transform: scale(1.05); /* Slight zoom effect */
+    }
+
+    /* Import Google Font for Typography */
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+    /* Hero Section Styling */
+    .hero {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh; /* Full viewport height */
+      background: linear-gradient(135deg, #5a0000, #2b0000);
+      padding: 20px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5); /* Dark overlay for better text contrast */
+      z-index: 1;
+    }
+
+    .hero-content {
+      display: flex;
+      align-items: center;
+      gap: 60px; /* Space between logo and description */
+      max-width: 1200px; /* Adjust as needed */
+      width: 100%;
+      padding: 0 20px;
+      position: relative;
+      z-index: 2; /* Ensure content is above the overlay */
+    }
+
+    .hero-left {
+      text-align: center;
+    }
+
+    .hero-logo {
+      width: 150px; /* Adjust as needed */
+      height: auto;
+      margin-bottom: 20px;
+      filter: drop-shadow(0 0 10px rgba(255, 0, 0, 0.7)); /* Glowing effect */
+      transition: transform 0.3s ease, filter 0.3s ease;
+    }
+
+    .hero-logo:hover {
+      transform: scale(1.1); /* Slight zoom on hover */
+      filter: drop-shadow(0 0 20px rgba(255, 0, 0, 1)); /* Brighter glow on hover */
+    }
+
+    .hero-title {
+      font-size: 48px;
+      font-weight: bold;
+      color: #ff0000; /* Red text */
+      text-transform: uppercase;
+      font-family: 'Poppins', sans-serif; /* Modern font */
+      text-shadow: 0 0 10px rgba(255, 0, 0, 0.7); /* Text glow */
+      margin-bottom: 10px;
+    }
+
+    .hero-right {
+    max-width: 600px; /* Adjust as needed */
+    text-align: right; /* Align text to the right */
+    }
+
+    .join-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: transparent; /* Transparent background */
+    color: #ff0000; /* Red text */
+    border: 2px solid #ff0000; /* Red border */
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease; /* Smooth transition for all properties */
+    margin-top: 20px; /* Add space above the button */
+    }
+
+    .join-button:hover {
+    background-color: #ff0000; /* Solid red background on hover */
+    color: #fff; /* White text on hover */
+    box-shadow: 0 0 15px rgba(255, 0, 0, 0.7); /* Glow effect on hover */
+    }
+
+    .hero-description {
+      font-size: 18px;
+      color: #ccc; /* Light gray text */
+      line-height: 1.6;
+      margin-bottom: 20px;
+      font-family: 'Poppins', sans-serif; /* Modern font */
+      text-shadow: 0 0 5px rgba(255, 255, 255, 0.2); /* Subtle text shadow */
+    }
+
+    /* Games Section Styling */
+    .games {
+      padding: 60px 20px;
+      background-color: black; /* Dark background */
+      text-align: center;
+    }
+
+    .section-title {
+      font-size: 36px;
+      font-weight: bold;
+      color: #ff0000; /* Red text */
+      margin-bottom: 40px;
+      text-transform: uppercase;
+    }
+
+    .games-container {
+      display: flex;
+      justify-content: center;
+      gap: 30px; /* Space between cards */
+      flex-wrap: wrap; /* Wrap cards on smaller screens */
+    }
+
+    .game-card {
+      text-decoration: none;
+      color: #fff;
+      background-color: #000; /* Black background */
+      border: 2px solid #ff0000; /* Red border */
+      overflow: hidden;
+      width: 300px; /* Fixed width for cards */
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .game-card:hover {
+      transform: translateY(-10px); 
+      box-shadow: 0 10px 20px rgba(255, 0, 0, 0.3); 
+    }
+
+    .game-image {
+      width: 100%;
+      height: 200px; 
+      object-fit: cover; 
+    }
+
+    .game-title {
+      font-size: 24px;
+      font-weight: bold;
+      margin: 20px 0 10px;
+      color: #ff0000;
+    }
+
+    .game-description {
+      font-size: 16px;
+      color: #ccc; 
+      padding: 0 20px 20px;
+    }
+
+    /* Officers Section Styling */
+    .officers {
+      padding: 60px 20px;
+      background-color: black; 
+      text-align: center;
+    }
+
+    .officers-list {
+      list-style: none; 
+      max-width: 800px; 
+      margin: 0 auto; 
+      padding: 0;
+    }
+
+    .officer-item {
+      display: flex;
+      align-items: center;
+      gap: 20px; 
+      padding: 15px;
+      border-bottom: 1px solid #ff0000; 
+      transition: background-color 0.3s ease;
+    }
+
+    .officer-item:hover {
+      background-color: #1a1a1a; 
+    }
+
+    .officer-icon {
+      font-size: 60px; 
+      color: #ff0000; 
+      border: 2px solid #ff0000; 
+      border-radius: 50%; 
+      padding: 10px; 
+    }
+
+    .officer-details {
+      text-align: left;
+    }
+
+    .officer-name {
+      font-size: 20px;
+      font-weight: bold;
+      color: #ff0000; 
+      margin-bottom: 5px;
+    }
+
+    .officer-position {
+      font-size: 16px;
+      color: #ccc; 
+    }
+
+    /* Footer Styling */
+    footer {
+      background-color: #1a1a1a; 
+      padding: 40px 20px;
+      text-align: center;
+      border-top: 2px solid #ff0000; 
+    }
+
+    .footer-content {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .footer-section {
+      flex: 1;
+      min-width: 200px;
+    }
+
+    .footer-section h3 {
+      font-size: 20px;
+      font-weight: bold;
+      color: #ff0000; /* Red text */
+      margin-bottom: 15px;
+      text-transform: uppercase;
+    }
+
+    .footer-section p {
+      font-size: 16px;
+      color: #ccc; /* Light gray text */
+      margin-bottom: 10px;
+    }
+
+    .footer-section a {
+      text-decoration: none;
+      color: #ccc; 
+      transition: color 0.3s ease;
+    }
+
+    .footer-section a:hover {
+      color: #ff0000; 
+    }
+
+    .social-links {
+      display: flex;
+      gap: 15px; 
+      justify-content: center;
+    }
+
+    .social-links a {
+      font-size: 24px;
+      color: #ccc; 
+      transition: color 0.3s ease;
+    }
+
+    .social-links a:hover {
+      color: #ff0000; 
+    }
+
+    .footer-bottom {
+      margin-top: 20px;
+      font-size: 14px;
+      color: #ccc; 
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo-container">
+      <img src="assets/pylon_esports_logo.png" alt="Pylon Esports Logo" class="logo">
+      <h1 class="logo-text">Pylon Esports</h1>
+    </div>
+    <nav>
+      <ul class="navbar">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#games">Games</a></li>
+        <li><a href="#officers">Officers</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <div class="hero-left">
+        <img src="assets/pylon_esports_logo.png" alt="Pylon Esports Logo" class="hero-logo">
+        <h1 class="hero-title">Pylon Esports</h1>
+      </div>
+      <div class="hero-right">
+        <p class="hero-description">
+          Pylon Esports is a premier gaming organization dedicated to fostering talent, building communities, and pushing the boundaries of competitive gaming. Founded by passionate gamers, we strive to create a platform where players can showcase their skills, connect with like-minded individuals, and compete at the highest level.
+        </p>
+        <a href="https://facebook.com/pylonesports">
+            <button class="join-button">Join Now!</button>
+          </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Games Section -->
+<section id="games" class="games">
+    <h2 class="section-title">Our Games</h2>
+    <div class="games-container">
+      <!-- League of Legends -->
+      <a href="League.html" class="game-card">
+        <article>
+          <img src="assets/banners/lol_banner.jfif" alt="League of Legends" class="game-image">
+          <h3 class="game-title">League of Legends</h3>
+          <p class="game-description">Join the battle in the world's most popular MOBA game.</p>
+        </article>
+      </a>
+      <!-- Valorant -->
+      <a href="Valorant.html" class="game-card">
+        <article>
+          <img src="assets/banners/valorant_banner.jpg" alt="Valorant" class="game-image">
+          <h3 class="game-title">Valorant</h3>
+          <p class="game-description">Experience tactical gameplay and precise shooting in Valorant.</p>
+        </article>
+      </a>
+      <!-- Mobile Legends: Bang Bang -->
+      <a href="Mlbb.html" class="game-card">
+        <article>
+          <img src="assets/banners/ml_banner.jpeg" alt="Mobile Legends: Bang Bang" class="game-image">
+          <h3 class="game-title">Mobile Legends: Bang Bang</h3>
+          <p class="game-description">Dominate the battlefield in this fast-paced mobile MOBA.</p>
+        </article>
+      </a>
+    </div>
+  </section>
+
+  <!-- Officers Section -->
+  <section id="officers" class="officers">
+    <h2 class="section-title">Our Officers</h2>
+    <ul class="officers-list">
+      <li class="officer-item">
+        <article>
+          <i class="fas fa-user-circle officer-icon"></i>
+          <div class="officer-details">
+            <h3 class="officer-name">Juan Dela Cruz</h3>
+            <p class="officer-position">President</p>
+          </div>
+        </article>
+      </li>
+      <li class="officer-item">
+        <article>
+          <i class="fas fa-user-circle officer-icon"></i>
+          <div class="officer-details">
+            <h3 class="officer-name">Maria Santos</h3>
+            <p class="officer-position">Vice President</p>
+          </div>
+        </article>
+      </li>
+      <li class="officer-item">
+        <article>
+          <i class="fas fa-user-circle officer-icon"></i>
+          <div class="officer-details">
+            <h3 class="officer-name">Pedro Reyes</h3>
+            <p class="officer-position">Secretary</p>
+          </div>
+        </article>
+      </li>
+      <li class="officer-item">
+        <article>
+          <i class="fas fa-user-circle officer-icon"></i>
+          <div class="officer-details">
+            <h3 class="officer-name">Ana Lopez</h3>
+            <p class="officer-position">Treasurer</p>
+          </div>
+        </article>
+      </li>
+      <li class="officer-item">
+        <article>
+          <i class="fas fa-user-circle officer-icon"></i>
+          <div class="officer-details">
+            <h3 class="officer-name">Luis Garcia</h3>
+            <p class="officer-position">Event Coordinator</p>
+          </div>
+        </article>
+      </li>
+      <li class="officer-item">
+        <article>
+          <i class="fas fa-user-circle officer-icon"></i>
+          <div class="officer-details">
+            <h3 class="officer-name">Sofia Rivera</h3>
+            <p class="officer-position">Marketing Head</p>
+          </div>
+        </article>
+      </li>
+    </ul>
+  </section>
+
+  <!-- Footer Section -->
+  <footer id="contact">
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>Contact Us</h3>
+        <p>Email: <a href="mailto:info@pylonesports.com">info@pylonesports.com</a></p>
+        <p>Phone: +1 (123) 456-7890</p>
+        <p>Address: 123 Esports Lane, Gaming City, World</p>
+      </div>
+      <div class="footer-section">
+        <h3>Follow Us</h3>
+        <div class="social-links">
+          <a href="https://facebook.com/pylonesports" target="_blank"><i class="fab fa-facebook"></i></a>
+          <a href="https://twitter.com/pylonesports" target="_blank"><i class="fab fa-twitter"></i></a>
+          <a href="https://instagram.com/pylonesports" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="https://youtube.com/pylonesports" target="_blank"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      &copy; 2025 Pylon Esports. All rights reserved.
+    </div>
+  </footer>
+</body>
+</html>
