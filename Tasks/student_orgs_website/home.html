@@ -243,24 +243,26 @@
 
     /* Officers Section Styling */
     .officers {
-      padding: 60px 20px;
+      padding: 30px 20px;
       background-color: black; 
       text-align: center;
     }
 
     .officers-list {
-      list-style: none; 
-      max-width: 800px; 
-      margin: 0 auto; 
-      padding: 0;
+    list-style: none;
+    display: flex;
+    gap: 20px; 
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
     }
 
     .officer-item {
       display: flex;
       align-items: center;
+      margin-left: auto;
       gap: 20px; 
-      padding: 15px;
-      border-bottom: 1px solid #ff0000; 
+      padding: 10px 30px;
       transition: background-color 0.3s ease;
     }
 
@@ -277,14 +279,15 @@
     }
 
     .officer-details {
-      text-align: left;
+      text-align: center;
     }
 
     .officer-name {
       font-size: 20px;
       font-weight: bold;
       color: #ff0000; 
-      margin-bottom: 5px;
+      margin-bottom: 10px;
+      text-align: center;
     }
 
     .officer-position {
@@ -462,7 +465,7 @@
         <article>
           <i class="fas fa-user-circle officer-icon"></i>
           <div class="officer-details">
-            <h3 class="officer-name">Ana Lopez</h3>
+            <h3 class="officer-name">James Garcia</h3>
             <p class="officer-position">Treasurer</p>
           </div>
         </article>
