@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/pylon_esports_logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/general.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Pylon Esports</title>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <!-- Logo -->
+            <a href="home.html">
+                <img src="./assets/pylon_esports_logo.png" alt="Pylon Logo" class="logo">
+            </a>
+
+            <!-- Navigation Links -->
+            <div class="nav-links">
+                <a href="League.html" class="nav-link">LEAGUE</a>
+                <a href="./Valorant.html" class="nav-link">VALORANT</a>
+                <a href="./Mlbb.html" class="nav-link">MLBB</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Landing Page -->
+    <div id="home" style="height: 100vh; position: relative; overflow: hidden;">
+        <!-- Image Background -->
+        <div
+            style="position: absolute;width: 100%;height: 95%;display: flex;justify-content: center;background: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)),url('./assets/league/BGL.jpg');background-size: cover;background-position: center;">
+            <div style="position: absolute;width: 100%;height: 100%;backdrop-filter: blur(2px);">
+                <img src="./assets/league/Team.png" alt="Pylon Nemesis"
+                    style="height: 100%; width: auto; position: fixed;margin-left: 140px;">
+            </div>
+        </div>
+
+        <!-- Gradient Overlay -->
+        <div style="position: absolute; bottom: 0; left: 0; width: 100%; height: 40%;
+                    background: linear-gradient(to top, rgba(0,0,0,1) 40%, rgba(0,0,0,0) 100%);">
+        </div>
+
+        <!-- Text Overlay -->
+        <div
+            style="position: absolute; bottom: 20%; left: 50%; transform: translateX(-50%); text-align: center; width: 100%; z-index: 2;">
+            <h2
+                style="color: #FFFFFF; font-size: 5em; margin: 0 0 30px 0; letter-spacing: 4px; text-shadow: -1px -1px 10px #fde800, 1px -1px 2px #5451f4, -1px 1px 2px #fde800, 1px 1px 2px #5451f4;">
+                PYLON YPSILOS
+            </h2>
+            <div style="display: flex; justify-content: center; gap: 40px; flex-wrap: wrap; padding: 0 20px;">
+                <span style="font-size: 2em; text-shadow: 0 0 10px #fde800;">"Viels" - Top</span>
+                <span style="font-size: 2em; text-shadow: 0 0 10px #fde800;">"Corks" - Jungle</span>
+                <span style="font-size: 2em; text-shadow: 0 0 10px #fde800;">"Eksdi" - Mid</span>
+                <span style="font-size: 2em; text-shadow: 0 0 10px #fde800;">"Rubicker" - Bot</span>
+                <span style="font-size: 2em; text-shadow: 0 0 10px #fde800;">"Wpffh" - Support</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Game Description Section -->
+    <div style="
+        position: relative; 
+        padding: 80px 40px; 
+        color: white;
+        overflow: hidden;
+    ">
+        <!-- Background with Gradient Overlay -->
+        <div style="
+            position: absolute;
+            inset: 0;
+            background: 
+                linear-gradient(to bottom, rgba(244, 206, 9, 0.8), rgba(244, 206, 9, 0) 30%, rgba(244, 206, 9, 0) 70%, rgba(0, 0, 0, 0.8)),
+                url('assets/league/bg.webp') center/cover no-repeat;
+            opacity: 0.3;
+            z-index: -1;
+        "></div>
+
+        <!-- Content Wrapper -->
+        <div
+            style="display: flex; align-items: center; gap: 40px; max-width: 1500px; margin: 0 auto; position: relative; z-index: 1;">
+
+            <!-- Title Section (Left Side) -->
+            <div style="flex-shrink: 0; min-width: 250px; text-align: left;">
+                <h1 style="color: #FFFFFF; text-shadow: 0 0 10px rgb(255, 183, 0); margin: 0; line-height: 1;">
+                    <span style="display: block; font-size: 2.5em; font-weight: bold;">About</span>
+                    <span style="font-size: 2.5em; font-weight: bold;">Pylon Ypsilos</span>
+                </h1>
+            </div>
+
+            <!-- Description Section (Right Side) -->
+            <div style="flex: 1;">
+                <p style="line-height: 1.6; font-size: 1.3em; text-align: justify;">
+                    Pylon Ypsilos is a dominant force in the League of Legends esports scene, known for their precise
+                    macro play,
+                    calculated team fights, and aggressive early-game strategies. Our roster consists of highly skilled
+                    players, each
+                    mastering their role to outmaneuver opponents and secure victory on the Rift.
+                    <br><br>
+                    With a history of triumphs, including a 3-0 sweep in the Summoner’s Rift Showdown 2025, Pylon
+                    Guardians continues
+                    to assert dominance in the competitive League scene. Every match is a testament to our synergy,
+                    mechanical skill,
+                    and relentless pursuit of greatness.
+                </p>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- Content Section -->
+    <div
+        style="display: grid; grid-template-columns: 1fr 1fr; gap: 30px; padding: 50px 20px; min-height: 100vh; background-color: #0a0a0a; align-items: start;">
+        <!-- Event Table -->
+        <div style="padding: 20px;">
+            <h1 style="color: rgb(227, 155, 56); text-shadow: 0 0 10px rgb(227, 155, 56); margin-bottom: 15px;">Upcoming
+                Tournaments</h1>
+            <table style="width: 100%; border-collapse: collapse; border: 2px solid rgb(227, 155, 56);">
+                <tr style="background-color: rgb(227, 155, 56);">
+                    <th style="padding: 10px;">Date</th>
+                    <th style="padding: 10px;">Event</th>
+                    <th style="padding: 10px;">Prize Pool</th>
+                </tr>
+                <tr style="border-bottom: 1px solid rgb(227, 155, 56)">
+                    <td style="padding: 10px;">10/15/2025</td>
+                    <td style="padding: 10px;">Summoner’s Rift Clash 2025</td>
+                    <td style="padding: 10px;">50,000 pesos</td>
+                </tr>
+                <tr style="border-bottom: 1px solid rgb(227, 155, 56);">
+                    <td style="padding: 10px;">9/7/2025</td>
+                    <td style="padding: 10px;">CCIS Week: Rift Showdown</td>
+                    <td style="padding: 10px;">2,000 pesos</td>
+                </tr>
+                <tr style="border-bottom: 1px solid rgb(227, 155, 56);">
+                    <td style="padding: 10px;">8/24/2025</td>
+                    <td style="padding: 10px;">Inter-Branch PUP Rift Rumble</td>
+                    <td style="padding: 10px;">5,000 pesos</td>
+                </tr>
+                <tr style="border-bottom: 1px solid rgb(227, 155, 56);">
+                    <td style="padding: 10px;">6/13/2025</td>
+                    <td style="padding: 10px;">MAPUA ESPORTS: League of Champions</td>
+                    <td style="padding: 10px;">10,000 pesos</td>
+                </tr>
+                <tr style="border-bottom: 1px solid rgb(227, 155, 56);">
+                    <td style="padding: 10px;">4/15/2025</td>
+                    <td style="padding: 10px;">Intercollegiate Rift Wars</td>
+                    <td style="padding: 10px;">20,000 pesos</td>
+                </tr>
+            </table>
+        </div>
+
+        <!-- Event List -->
+        <div class="events-container">
+            <h1 class="events-title">Past Events</h1>
+
+            <div class="event-card">
+                <div class="event-content">
+                    <div class="event-image">
+                        <img src="./assets/league/elder.png" alt="Rift War 2025">
+                    </div>
+                    <div class="event-details">
+                        <h2 class="event-name">Rift War 2025</h2>
+                        <p class="event-description">
+                            Pylon Main showcased their dominance at Rift War 2025, claiming the championship title with
+                            a 3-1 victory over Shadow Reapers. The team’s macro gameplay and objective control were
+                            unparalleled,
+                            with Phantom leading the charge in mid lane and Wraith securing every crucial Baron.
+                            The highlight of the tournament came in the final game when Spectre’s game-winning Pentakill
+                            on Jinx sealed the championship.
+                            With this triumph, Pylon Main establishes itself as one of the top League of Legends teams
+                            in
+                            2025.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="event-card">
+                <div class="event-content">
+                    <div class="event-image">
+                        <img src="./assets/league/BG.png" alt="Summoner’s Rift Showdown">
+                    </div>
+                    <div class="event-details">
+                        <h2 class="event-name">Summoner’s Rift Showdown 2025</h2>
+                        <p class="event-description">
+                            The Summoner’s Rift Showdown 2025 delivered an unforgettable grand final, with
+                            <strong>Pylon Guardians</strong> securing the championship title after a thrilling 3-2
+                            series
+                            against <strong>Void Slayers</strong>.
+                            <strong>Storm</strong>, the team’s Mid Laner, dominated with unmatched Azir performances,
+                            while
+                            <strong>Revenant</strong> controlled the jungle with Sejuani.
+                            Game 5 saw <strong>Phantom</strong>’s Jinx popping off, securing a Quadra Kill and leading
+                            to
+                            victory.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="event-card">
+                <div class="event-content">
+                    <div class="event-image">
+                        <img src="./assets/league/Baron.jpg" alt="Baron Brawl 2025">
+                    </div>
+                    <div class="event-details">
+                        <h2 class="event-name">Baron Brawl 2025</h2>
+                        <p class="event-description">
+                            Pylon Main dominated Baron Brawl 2025, executing flawless rotations and split-pushing
+                            strategies
+                            to claim a 3-0 sweep in the Grand Finals.
+                            Wraith’s jungle control ensured every Baron Nashor went to their team, while Void’s
+                            aggressive
+                            top
+                            lane pressure kept opponents scrambling.
+                            The series concluded with Shadow’s insane outplay on Zed, eliminating three enemy carries in
+                            a
+                            single skirmish.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <!-- Copyright Text -->
+        <p id="p-footer">
+            © 2025 Pylon Esports. All rights reserved.
+        </p>
+
+        <!-- Social Media Links -->
+        <div id="footer-socmed">
+            <!-- Facebook -->
+            <a href="https://www.facebook.com/PylonEsports" target="_blank" class="footer-socmed-icons">
+                <i class="fa-brands fa-facebook-f fa-xl"></i>
+            </a>
+
+            <!-- X (Twitter) -->
+            <a href="https://x.com/pylonesports" target="_blank" class="footer-socmed-icons">
+                <i class="fa-brands fa-x-twitter fa-xl"></i>
+            </a>
+
+            <!-- Email -->
+            <a href="mailto:pylonesports@gmail.com" class="footer-socmed-icons">
+                <i class="fa-solid fa-envelope fa-xl"></i>
+            </a>
+        </div>
+    </footer>
+
+
+
+</body>
+
+<style>
+.events-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px 0;
+}
+
+.events-title {
+    color: rgb(227, 155, 56);
+    text-shadow: 0 0 10px rgb(227, 155, 56);
+    margin-bottom: 15px;
+}
+
+.event-card {
+    background-color: #1a1a1a;
+    padding: 15px;
+    border: 2px solid rgb(227, 155, 56);
+    border-radius: 10px;
+}
+
+.event-content {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.event-image {
+    flex-shrink: 0;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.event-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.event-details {
+    flex-grow: 1;
+    min-width: 0;
+}
+
+.event-name {
+    color: rgb(227, 155, 56);
+    text-shadow: 0 0 10px rgb(227, 155, 56);
+    margin: 0;
+    font-size: 2em;
+}
+
+.event-description {
+    color: #aaa;
+    margin: 10px 0 0;
+    line-height: 1.4;
+    font-size: 0.9em;
+    word-break: break-word;
+}
+</style>
+
+</html>

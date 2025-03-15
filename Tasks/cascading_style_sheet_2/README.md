@@ -1,5 +1,5 @@
 
-# Cascading Style Sheet Group : Group collaboration(part 2)
+# Cascading Style Sheet Group : Group collaboration (part 2)
 
 
 
