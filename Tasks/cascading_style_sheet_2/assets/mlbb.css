@@ -14,7 +14,7 @@
     display: flex;
     justify-content: center;
     background: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)), 
-                url('./assets/mlbb/ML_BG.jpg');
+                url('../assets/mlbb/ML_BG.jpg');
     background-size: cover;
     background-position: center;
 }
@@ -95,7 +95,7 @@
     inset: 0;
     background:
         linear-gradient(to bottom, rgba(233, 5, 5, 0.8), rgba(233, 5, 5, 0) 30%, rgba(241, 7, 7, 0) 70%, rgba(0, 0, 0, 0.8)),
-        url('assets/mlbb/bg.webp') center/cover no-repeat;
+        url('../assets/mlbb/bg.webp') center/cover no-repeat;
     opacity: 0.3;
     z-index: -1;
 }
