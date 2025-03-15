@@ -1,0 +1,233 @@
+/**landing page**/
+
+/* Home Section */
+#home {
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+#image-background {
+    position: absolute;
+    width: 100%;
+    height: 95%;
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)), 
+                url('./assets/mlbb/ML_BG.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+/* Blur Overlay */
+#blur-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(4px);
+}
+
+/* Team Image */
+#team-image {
+    height: 100%;
+    width: auto;
+    position: fixed;
+    margin-left: 50px;
+}
+
+/* Gradient Overlay */
+#gradient-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 40%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 1) 40%, rgba(0, 0, 0, 0) 100%);
+}
+
+/* Text Overlay */
+#text-overlay {
+    position: absolute;
+    bottom: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    width: 100%;
+    z-index: 2;
+}
+
+/* Team Name */
+#text-overlay h2 {
+    color: #FFFFFF;
+    font-size: 5em;
+    text-shadow: 0 0 30px #800000;
+    margin: 0 0 30px 0;
+    letter-spacing: 4px;
+    text-shadow: -1px -1px 10px #510, 1px -1px 0 #510, 
+                 -1px 1px 0 #510, 1px 1px 10px rgb(255, 0, 0);
+}
+
+/* Player Names */
+.player-names {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    padding: 0 20px;
+}
+
+.player-names span {
+    font-size: 2em;
+    text-shadow: 0 0 10px #ff0000;
+}
+
+/*game description section */
+#game-description-section {
+    position: relative;
+    padding: 80px 40px;
+    color: white;
+    overflow: hidden;
+}
+
+/*background overlay*/
+#bg-overlay-gradient {
+    position: absolute;
+    inset: 0;
+    background:
+        linear-gradient(to bottom, rgba(233, 5, 5, 0.8), rgba(233, 5, 5, 0) 30%, rgba(241, 7, 7, 0) 70%, rgba(0, 0, 0, 0.8)),
+        url('assets/mlbb/bg.webp') center/cover no-repeat;
+    opacity: 0.3;
+    z-index: -1;
+}
+
+/*content wrapper*/
+.container {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    max-width: 1500px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+}
+
+.title-section {
+    flex-shrink: 0;
+    min-width: 250px;
+    text-align: left;
+}
+
+.title-section h1 {
+    color: #FFFFFF;
+    text-shadow: 0 0 10px #800000;
+    margin: 0;
+    line-height: 1;
+}
+
+.title-section span {
+    display: block;
+    font-size: 2.5em;
+    font-weight: bold;
+}
+
+.description-section {
+    flex: 1;
+}
+
+.description-section p {
+    line-height: 1.6;
+    font-size: 1.3em;
+    text-align: justify;
+}
+
+/**Content section**/
+/*event table*/
+.tournament-container {
+    padding: 20px;
+}
+
+.tournament-title {
+    color: #800000;
+    text-shadow: 0 0 10px #800000;
+    margin-bottom: 15px;
+}
+
+.tournament-table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 2px solid #800000;
+}
+
+.tournament-table th {
+    padding: 10px;
+    background-color: #800000;
+}
+
+.tournament-table td {
+    padding: 10px;
+}
+
+.tournament-table tr {
+    border-bottom: 1px solid #800000;
+}
+
+/*event list*/
+.events-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px 0;
+}
+
+.events-title {
+    color: #800000;
+    text-shadow: 0 0 10px #800000;
+    margin-bottom: 15px;
+}
+
+.event-card {
+    background-color: #1a1a1a;
+    padding: 15px;
+    border: 2px solid #800000;
+    border-radius: 10px;
+}
+
+.event-content {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.event-image {
+    flex-shrink: 0;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.event-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.event-details {
+    flex-grow: 1;
+    min-width: 0;
+}
+
+.event-name {
+    color: #800000;
+    text-shadow: 0 0 10px #800000;
+    margin: 0;
+    font-size: 2em;
+}
+
+.event-description {
+    color: #aaa;
+    margin: 10px 0 0;
+    line-height: 1.4;
+    font-size: 0.9em;
+    word-break: break-word;
+}

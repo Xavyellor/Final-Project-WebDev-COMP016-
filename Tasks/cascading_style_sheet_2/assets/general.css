@@ -1,0 +1,111 @@
+/*Body*/
+body {
+    margin: 0;
+    font-family: Arial,
+        sans-serif;
+    background-color: black;
+    color: white;
+}
+
+/* Navbar */
+nav {
+    background-color: #000;
+    padding: 15px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    border-bottom: 2px solid #800000;
+    z-index: 1000;
+}
+
+#navbar {
+    background-color: #000;
+    padding: 15px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    border-bottom: 2px solid #800000;
+    z-index: 1000;
+}
+
+/* Navbar Container */
+.nav-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Logo */
+.logo {
+    max-width: 100px;
+    max-height: 60px;
+    margin-bottom: 10px;
+    transition: filter 0.3s ease;
+}
+
+.logo:hover {
+    filter: drop-shadow(0 0 10px #800000);
+}
+
+/* Navigation Links */
+.nav-links {
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    padding: 8px 15px;
+    transition: text-shadow 0.3s ease;
+}
+
+/* Hover Effects */
+.nav-link:hover {
+    text-shadow: 0 0 10px rgb(227, 155, 56), 0 0 20px rgb(227, 155, 56);
+}
+
+.nav-link[href="League.html"]:hover {
+    text-shadow: 0 0 10px rgb(227, 155, 56), 0 0 20px rgb(227, 155, 56);
+}
+
+.nav-link[href="./Valorant.html"]:hover {
+    text-shadow: 0 0 10px #4f1cf4, 0 0 20px #4f1cf4;
+}
+
+.nav-link[href="./Mlbb.html"]:hover {
+    text-shadow: 0 0 10px rgba(233, 5, 5, 0.8), 0 0 20px rgba(2, 1, 1, 0.8);
+}
+
+
+/*footer*/
+footer {
+    background-color: #000;
+    padding: 40px 30px;
+    text-align: center;
+    border-top: 2px solid #800000;
+}
+
+#p-footer {
+    margin: 0 0 20px;
+    color: #800000;
+    text-shadow: 0 0 10px #800000;
+}
+
+#footer-socmed {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+.footer-socmed-icons {
+    color: #800000;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.footer-socmed-icons:hover {
+    transform: scale(1.2);
+    text-shadow: 0 0 15px #800000;
+}
