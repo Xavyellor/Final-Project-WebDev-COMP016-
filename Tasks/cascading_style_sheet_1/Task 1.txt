@@ -1,1 +1,3 @@
+In this activity, our professor task us to use the 3 different way to use CSS.
+
 
