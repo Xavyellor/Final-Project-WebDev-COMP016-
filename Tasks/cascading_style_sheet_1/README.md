@@ -13,6 +13,22 @@ Pylon Esports is the official esports organization of the Polytechnic University
 ## ❓ Problem
 Make webpages that apply the 3 ways of CSS
 
+## ✅ Answer
+In this activity, our professor task us to use the 3 different way to use CSS.
+
+Here is the distribution of CSS across the files:
+
+1. Inline CSS
+  - League.html
+  - Mlbb.html
+  - Valorant.html
+2. Internal CSS
+  - Home.html
+3. External CSS
+  -  All pages with the Usage of: general.css
+
+
+
 ## 👷👷‍♀️ Collaborators
 
 

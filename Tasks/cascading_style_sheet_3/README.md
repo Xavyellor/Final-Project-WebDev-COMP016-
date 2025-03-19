@@ -18,7 +18,9 @@ From the previous group collaboration modify
 your output and apply CSS box model in each of
 webpages.
 
-## ⚙️ How we utilize this
+## ✅ Answer
+⚙️ How we utilize this
+
 Throughout Part 1 and Part 2 of our group collaboration, we have consistently utilized the CSS Box Model to organize and structure our website effectively to make the content aesthetically pleasing.
 
 How We Used the Box Model:
